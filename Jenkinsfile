@@ -1,6 +1,6 @@
 node('built-in') {
     stage('continuous intgration'){
-    git 'https://github.com/srikorboina/maven1.git'
+    git 'https://github.com/srinath111/raju.git'
     }
     stage('continuous build'){
         sh 'mvn package'
