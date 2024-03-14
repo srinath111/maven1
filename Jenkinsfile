@@ -10,7 +10,7 @@ node('built-in') {
     }
     stage('continuous testing'){
         git 'https://github.com/srikorboina/sr.git'
-        sh 'java -jar /root/.jenkins/workspace/script/testing.jar'
+        sh 'java -jar /root/.jenkins/workspace/maven1/testing.jar'
     }
 }
 
