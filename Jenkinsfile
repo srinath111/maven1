@@ -6,7 +6,7 @@ node('built-in') {
         sh 'mvn package'
     }
     stage('continuous devlivery_sri'){
-        deploy adapters: [tomcat9(credentialsId: 'db8b7ed0-501d-4d83-b874-6b42ce600110', path: '', url: 'http://10.1.4.81:8080')], contextPath: 'test2app', war: '**/*.war'
+        deploy adapters: [tomcat9(credentialsId: 'dac6c3c8-4e2a-4a72-a378-0cdf72041db0', path: '', url: 'http://10.1.4.81:8080')], contextPath: 'sri12', war: '**/*.war'
     }
 }
 
