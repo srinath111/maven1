@@ -10,7 +10,7 @@ node('built-in') {
     }
     stage('continuous testing_master'){
         git 'https://github.com/srikorboina/sr.git'
-        sh 'java -jar /root/.jenkins/workspace/srinath/testing.jar'
+        sh 'java -jar /root/.jenkins/workspace/srinath_master/testing.jar'
     }
     stage('continuous deploy_master'){
         input message: 'please approve', submitter: 'sri'
